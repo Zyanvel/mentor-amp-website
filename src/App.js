@@ -1,9 +1,12 @@
 import './App.css';
+import SunsetHeroSection from "./components/SunsetHeroSection"
+
 
 function App() {
   return (
     <div className="App">
-    <h1>Let's get this started!</h1>
+    <SunsetHeroSection/>
+    
     </div>
   );
 }
