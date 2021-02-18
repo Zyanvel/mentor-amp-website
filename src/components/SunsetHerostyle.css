@@ -1,16 +1,20 @@
 * {margin: 0px; padding: 0px; }
 
+#component-container {
+    position: relative;
+  
+}
 .sunset-hero-bg {
     text-align: center;
     background: rgba(0,0,0,.50) url(../image/Sunset.jpg);
-    position: fixed;
+    position: absolute;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 35.5rem;
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
     
-    
+   
     
 }
 .sunset-h1-container {
@@ -20,8 +24,8 @@
    font-size: 6vw;
    font-family: 'Avenir', Helvetica, sans-serif;
    position: absolute;
-   left: 43vh;
-   top: 30vh;
+   left: 250px;
+   top: 150px;
    
    
    
