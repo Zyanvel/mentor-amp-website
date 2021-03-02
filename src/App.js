@@ -7,6 +7,8 @@ import GeneralInfoSection from "./components/GeneralInfoSection";
 import Features from "./components/Features";
 import TestimonySection from "./components/TestimonySection";
 import Form from "./components/Form";
+import ImageSlider from "./components/ImageSlider";
+import { SliderData } from "./components/SliderData";
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
       <NavBar/>
       <SunsetHeroSection/>
       <GeneralInfoSection/>
+      <ImageSlider slides={SliderData} />
       <Features/>
       <TestimonySection/>
       <Form/>
