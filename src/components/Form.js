@@ -6,6 +6,7 @@ import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import sunset from '../image/Sunset.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,47 +30,65 @@ export default function Form() {
   const classes = useStyles();
 
   return (
-    <Container component="main" maxWidth="xs">
-        <Typography variant="h3" component="h1" gutterBottom>
-        Connect with us to explore if MentorAmp is the solution for you.
-      </Typography>
-      <div className={classes.paper}>
-        <form className={classes.form} noValidate>
-          <Grid container spacing={2}>
-            <Grid item xs={12} sm={9}>
-              <TextField
-                autoComplete="name"
-                name="Name"
-                variant="outlined"
-                required
-                fullWidth
-                id="name"
-                label="Your Name"
-                autoFocus
-              />
+      <div style={{
+                  backgroundImage: `url(${sunset})`,
+                  backgroundSize: 'cover',
+                 backgroundPosition: 'bottom',
+                 minWidth: '100%',
+      }}>
+        <div style={{
+                  background: `rgba(0,0,0,.80)`,
+      }}>
+         <h1>Connect with us to explore if MentorAmp is the solution for you.</h1>
+          
+      
+        <Container component="main" 
+      maxWidth="xs"
+      >
+        <div className={classes.paper}>
+          <form className={classes.form} noValidate>
+            <Grid container spacing={2}>
+              <Grid item xs={12} sm={9}>
+                <TextField
+                  autoComplete="name"
+                  name="Name"
+                  variant="outlined"
+                  required
+                  fullWidth
+                  id="name"
+                  label="Your Name"
+                  color="primary"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  variant="outlined"
+                  required
+                  fullWidth
+                  id="email"
+                  label="Your Email Address"
+                  name="email"
+                  autoComplete="email"
+                  color="primary"
+                  
+                />
+              </Grid>
             </Grid>
-            <Grid item xs={12}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                id="email"
-                label="Your Email Address"
-                name="email"
-                autoComplete="email"
-              />
-            </Grid>
-          </Grid>
-          <Button
-            type="submit"
-            fullWidth
-            variant="outlined"
-            className={classes.submit}
-          >
-            Submit
-          </Button>
-        </form>
+            <Button
+              type="submit"
+              fullWidth
+              variant="outlined"
+              className={classes.submit}
+              color="primary"
+            >
+              Submit
+            </Button>
+          </form>
+        </div>
+      </Container> 
+        </div>
+        
       </div>
-    </Container>
-  );
+      
+    );
 }
