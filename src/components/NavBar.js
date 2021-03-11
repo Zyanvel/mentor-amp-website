@@ -8,7 +8,7 @@ function NavBar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
-                        <img src='/TempLogo.png' alt='Mentor Amp Logo'/>
+                        <img src='/LOGO_official.png' alt='Mentor Amp Logo'/>
                     </Link>
                 </div>
             </nav>

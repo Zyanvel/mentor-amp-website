@@ -1,21 +1,42 @@
-import React from 'react';
 
+
+import React from 'react';
+import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import EmailIcon from '@material-ui/icons/Email';
+import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import sunset from '../image/Sunset.jpg';
 
+function Copyright() {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit" href="">
+        MentorAmp
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
 const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: theme.spacing(8),
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'center',
-    background:  'url(../image/Sunset.jpg)'
+  },
+  avatar: {
+    margin: theme.spacing(1),
+    backgroundColor: 'rgb(49, 112, 111)',
   },
   form: {
     width: '100%', // Fix IE 11 issue.
@@ -26,69 +47,61 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Form() {
+export default function SignUp() {
   const classes = useStyles();
 
   return (
-      <div style={{
-                  backgroundImage: `url(${sunset})`,
-                  backgroundSize: 'cover',
-                 backgroundPosition: 'bottom',
-                 minWidth: '100%',
-      }}>
-        <div style={{
-                  background: `rgba(0,0,0,.80)`,
-      }}>
-         <h1>Connect with us to explore if MentorAmp is the solution for you.</h1>
-          
-      
-        <Container component="main" 
-      maxWidth="xs"
-      >
-        <div className={classes.paper}>
-          <form className={classes.form} noValidate>
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={9}>
-                <TextField
-                  autoComplete="name"
-                  name="Name"
-                  variant="outlined"
-                  required
-                  fullWidth
-                  id="name"
-                  label="Your Name"
-                  color="primary"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  variant="outlined"
-                  required
-                  fullWidth
-                  id="email"
-                  label="Your Email Address"
-                  name="email"
-                  autoComplete="email"
-                  color="primary"
-                  
-                />
-              </Grid>
+    <Container component="main" maxWidth="xs" >
+      <div className={classes.paper}>
+        <Avatar className={classes.avatar}>
+          <EmailIcon />
+        </Avatar>
+        <Typography component="h1" variant="h4" style= {{color:"rgb(65, 74, 79)"}} >
+          Connect with us to explore if MentorAmp is the solution for you.
+        </Typography>
+        <form className={classes.form} noValidate>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={9}>
+              <TextField
+                autoComplete="name"
+                name="name"
+                variant="outlined"
+                required
+                fullWidth
+                id="name"
+                label="Your Name Goes Here"
+                autoFocus
+              />
             </Grid>
-            <Button
-              type="submit"
-              fullWidth
-              variant="outlined"
-              className={classes.submit}
-              color="primary"
-            >
-              Submit
-            </Button>
-          </form>
-        </div>
-      </Container> 
-        </div>
-        
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                id="email"
+                label="Your Email Address"
+                name="email"
+                autoComplete="email"
+              />
+            </Grid>
+          </Grid>
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            style= {{backgroundColor: 'rgb(49, 112, 111)'}}
+            className={classes.submit}
+            target="_top"
+            rel="noopener noreferrer"
+            href={`mailto:zyanvel@gmail.com`}
+          >
+            Send
+          </Button>
+        </form>
       </div>
-      
-    );
+      <Box mt={5}>
+        <Copyright />
+      </Box>
+    </Container>
+  );
 }
