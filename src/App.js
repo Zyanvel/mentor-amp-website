@@ -8,21 +8,21 @@ import Features from "./components/Features";
 import TestimonySection from "./components/TestimonySection";
 import Form from "./components/Form";
 import ImageSlider from "./components/ImageSlider";
-import { SliderData } from "./components/SliderData";
+
 
 
 function App() {
   return (
     <>
     <Router>
-      <div className="container">
-      <NavBar/>
-      <SunsetHeroSection/>
-      <GeneralInfoSection/>
-      <ImageSlider slides={SliderData} />
-      <Features/>
-      <TestimonySection/>
-      <Form/>
+      <div className="app-container">
+      <NavBar />
+      <SunsetHeroSection />
+      <GeneralInfoSection />
+      <ImageSlider  />
+      <Features />
+      <TestimonySection />
+      <Form />
       </div>
       <Switch>
         <Route path='/' exact />

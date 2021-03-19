@@ -4,8 +4,26 @@
   position: relative;
   padding-bottom: 450px;
   top: 575px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
  
+}
+.first-part {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 1000px;
+    padding-top: 35px;
+    
+
+}
+.first-part-p {
+    color: black;
+    font-size: 35px;
+    word-spacing: 2px;
+    padding-top: 10px;
 }
 #container {
     width: 910px;

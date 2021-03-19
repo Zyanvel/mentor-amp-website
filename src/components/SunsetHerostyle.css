@@ -1,41 +1,50 @@
 * {margin: 0px; padding: 0px; }
 
-#component-container {
-    position: relative;
-  
+.hero-component-container {
+    display: flex;
+    flex-direction: column;
 }
 .sunset-hero-bg {
-    text-align: center;
-    background: rgba(0,0,0,.50) url(../image/Sunset.jpg);
+    
+    background: url(../image/GroupinSunset.jpeg);
     position: absolute;
     min-width: 100%;
     min-height: 35.5rem;
     background-size: cover;
     background-position: center;
-    background-blend-mode: darken;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Avenir', Helvetica, sans-serif;
    
     
 }
 .sunset-h1-container {
     position: relative;
-}
-.sunset-hero-header {
-   font-size: 6vw;
-   font-family: 'Avenir', Helvetica, sans-serif;
-   position: absolute;
-   left: 250px;
-   top: 150px;
-   
-   
-   
-   
-}
-
-.mentor {
-    color: white;
+    min-width: 800px;
+    min-height: 80px;
+    bottom: 80px;
+    padding: 25px 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    overflow: hidden;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    font-size: 20px;
+    display:block;
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: black;
 }
 
-.amp {
-    color: #EC6333;
+
+.hero-h1 {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-weight: normal;
+}
+
+.mentoramp-span {
+    font-weight: bold;
+    color: black;
 }
