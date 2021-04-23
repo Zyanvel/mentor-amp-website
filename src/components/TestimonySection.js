@@ -7,7 +7,7 @@ function TestimonySection() {
         <div className="div-container">
         <div>
             
-            <h2>In the words of our mentees<span>...</span></h2>
+            <h2>In the words of our mentees<span className="span">...</span></h2>
             <div className="p-container">
                 <p>"I appreciate the accountability with the weekly check-ins."</p>
                 <p>~ Stephen, Sales Executive</p>
