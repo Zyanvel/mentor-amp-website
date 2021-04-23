@@ -15,6 +15,9 @@
    font-family: 'Avenir', Helvetica, sans-serif;
    background-color: rgb(237, 237, 237);
    margin: 130px 130px 30px 130px;
+   min-height: 80%;
+    min-width: 80%;
+   
 
 }
 
@@ -25,13 +28,16 @@
    font-family: 'Avenir', Helvetica, sans-serif;
    background-color: rgb(237, 237, 237);
    margin: 30px 130px 0px 130px;
+   min-height: 80%;
+    min-width: 80%;
+   
   
 }
 
 .image-one, .image-two {
-    min-width: 35vw;
-    min-height: 44vh;
-    border-radius: 6%;
+    min-width: 35%;
+    min-height: 25rem;
+    border-radius: 10%;
 }
 
 .first-container-text, .second-container-text {
