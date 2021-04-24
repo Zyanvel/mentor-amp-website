@@ -1,7 +1,4 @@
-
-
 import React from 'react';
-import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -34,17 +31,18 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
   },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: 'rgb(49, 112, 111)',
-  },
   form: {
     width: '100%', // Fix IE 11 issue.
     marginTop: theme.spacing(3),
+    
   },
+  
   submit: {
     margin: theme.spacing(3, 0, 2),
+    backgroundColor: "#317070",
+    color: "#ffffff",
   },
+
 }));
 
 export default function SignUp() {
@@ -53,9 +51,7 @@ export default function SignUp() {
   return (
     <Container component="main" maxWidth="xs" >
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
-          <EmailIcon />
-        </Avatar>
+        
         <Typography component="h1" variant="h4" style= {{color:"rgb(65, 74, 79)"}} >
           Connect with us to explore if MentorAmp is the solution for you.
         </Typography>
@@ -69,7 +65,7 @@ export default function SignUp() {
                 required
                 fullWidth
                 id="name"
-                label="Your Name Goes Here"
+                label="Full Name"
                 autoFocus
               />
             </Grid>
@@ -79,7 +75,7 @@ export default function SignUp() {
                 required
                 fullWidth
                 id="email"
-                label="Your Email Address"
+                label="Email"
                 name="email"
                 autoComplete="email"
               />
@@ -89,13 +85,13 @@ export default function SignUp() {
             type="submit"
             fullWidth
             variant="contained"
-            style= {{backgroundColor: 'rgb(49, 112, 111)'}}
             className={classes.submit}
             target="_top"
             rel="noopener noreferrer"
             href={`mailto:zyanvel@gmail.com`}
+            
           >
-            Send
+            send
           </Button>
         </form>
       </div>

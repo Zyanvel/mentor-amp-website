@@ -1,50 +1,50 @@
-* {margin: 0px; padding: 0px; }
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
 .hero-component-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .sunset-hero-bg {
-    
-    background: url(../image/GroupinSunset.jpeg);
-    position: absolute;
-    min-width: 100%;
-    min-height: 35.5rem;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Avenir', Helvetica, sans-serif;
-   
-    
+  background: url(../image/GroupinSunset.jpeg);
+  position: absolute;
+  min-width: 100%;
+  min-height: 35.5rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Avenir", Helvetica, sans-serif;
+  /* filter: blur(8px); */
 }
 .sunset-h1-container {
-    position: relative;
-    min-width: 800px;
-    min-height: 80px;
-    bottom: 80px;
-    padding: 25px 25px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    overflow: hidden;
-    background: transparent;
-    backdrop-filter: blur(5px);
-    font-size: 20px;
-    display:block;
-    box-sizing: border-box;
-    border-radius: 15px;
-    color: black;
+  position: relative;
+  margin: 0 20px;
+  min-height: 80px;
+  bottom: 80px;
+  padding: 25px 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  font-size: 20px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: black;
 }
 
-
 .hero-h1 {
-    margin: 0;
-    padding: 0;
-    color: black;
-    font-weight: normal;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-weight: normal;
 }
 
 .mentoramp-span {
-    font-weight: bold;
-    color: black;
+  font-weight: bold;
+  color: black;
 }
