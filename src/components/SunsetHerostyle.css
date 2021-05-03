@@ -30,7 +30,6 @@
   overflow: hidden;
   background: transparent;
   backdrop-filter: blur(15px);
-  font-size: 20px;
   display: block;
   box-sizing: border-box;
   border-radius: 15px;
@@ -47,4 +46,14 @@
 .mentoramp-span {
   font-weight: bold;
   color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-h1 {
+    font-size: 26px;
+    
+  }
+  .sunset-h1-container {
+    bottom: 50px;
+  }
 }
