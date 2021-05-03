@@ -17,7 +17,7 @@ function ImageSlider() {
       src={img1}
       alt="First slide"
     />
-    <Carousel.Caption style={{textAlign: "left"}}>
+    <Carousel.Caption className='carousel-caption' style={{textAlign: "left"}}>
       <div className="slider-caption-container">
         <p className="caption-text">Arturo is a Programmer by day, and at night he teaches technology at his community center.
           Over the years, he has lifted many students out of poverty, with much better jobs.
