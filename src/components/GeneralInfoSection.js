@@ -1,6 +1,8 @@
 import React from "react";
 import "./GeneralInfoSection.css";
 
+//Here we created a basic component dividing to main containers where some text content was added.
+// We storaged all the styling for this component under the GeneralInfoSection.css file.
 function GeneralInfoSection() {
   return (
     <div id="container-container">
