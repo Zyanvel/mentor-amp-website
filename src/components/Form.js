@@ -11,6 +11,9 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
+// We used Material-UI to create this component. We still have not worked on the back end to send the form submit request go to a specific email//
+// We used makeStyles for styling the component.//
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">

@@ -13,6 +13,9 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
+//This component was created by using Material-UI. The Copyright content was created inside a function and it was returned inside a container.//
+// We used useStyles to style our component.//
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -47,10 +50,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function copyright() {
-    const classes = useStyles();
+  
   
     return (
-      <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" >
         <Box mt={5}>
           <Copyright />
         </Box>
