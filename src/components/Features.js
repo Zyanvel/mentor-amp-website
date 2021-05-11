@@ -14,9 +14,7 @@ const useStyles = makeStyles((theme) => ({
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      
-    
-      
+      // sets directions of both features containers
     },
     featuresContainer: {
       background:  'rgb(237, 237, 237)',
@@ -27,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '20px',
       fontSize: '25px',
       padding: '0px 15px',
+      // sets direction of elements within each of the features container
       [theme.breakpoints.down('xs')]: {
         
         height: '40%',
@@ -47,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
           },
     },
     heading: {
+        // heading within each feature container
         fontSize: '30px',
         color: 'rgb(45, 112, 112)',
         fontWeight: 'bold',
@@ -57,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
           },
     },
     pTypography: {
+        // p's within each feature container
         fontSize: '22px',
         marginTop: '5px',
         [theme.breakpoints.down('xs')]: {
@@ -73,8 +74,8 @@ function Features() {
  
     <Grid className={classes.featuresWrapper}>
             <Grid className={classes.featuresContainer}>
-            <img src={img1} alt="" className={classes.image}/>
-                <Grid className={classes.firstContainerText}>
+                <img src={img1} alt="" className={classes.image}/>
+                <Grid>
                     <Typography className={classes.heading}>
                         Proven Methodology
                     </Typography>
@@ -93,7 +94,7 @@ function Features() {
                 </Grid>
             </Grid>
             <Grid className={classes.featuresContainer}>                
-                <Grid >
+                <Grid>
                     <Typography className={classes.heading}>
                         Proven Methodology
                     </Typography>
