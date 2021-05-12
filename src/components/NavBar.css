@@ -1,12 +1,10 @@
+/*to remove default margin and padding in the NavBar component page.*/
 * {
     margin: 0px;
     padding: 0px;
 }
 
-/* navbar-container {
-    
-} */
-
+   /* position and height of logo on navigation bar*/
 img {
     height: 4vh;
     margin: 15px; 

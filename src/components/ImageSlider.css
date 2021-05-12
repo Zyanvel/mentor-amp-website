@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 #carousel-container {
@@ -50,15 +51,31 @@
 
 @media only screen and (max-width: 600px) {
   .caption-text {
-    font-size: 10px;
+    font-size: 15px;
+    
+  }
+  .carousel-caption {
+    width: 100%;
+    position: static !important;
+    padding-top: 0% !important;
+    border-radius: 0% !important;
+  }
+
+  .carousel-image {
+   margin: 0% !important;
+   border: 0% !important;
   }
   
   .slider-caption-container {
     overflow: scroll;
     display: flex;
+    width: 100%;
     flex-direction: column;
     margin-bottom: 150px;
     height: 250px;
+    border-radius: 0%
+    ;
+  
     
   }
 

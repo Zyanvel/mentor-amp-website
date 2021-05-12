@@ -7,6 +7,9 @@ import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 
+// We used Material-UI to create this component. Everything was wrapped inside a Grid component/container//
+//We used makeStyles in order to style our components//
+
 const useStyles = makeStyles((theme) => ({
     divContainer: {
       marginTop: theme.spacing(8),
