@@ -26,9 +26,11 @@ const useStyles = makeStyles((theme) => ({
       fontSize: '25px',
       padding: '0px 15px',
       // sets direction of elements within each of the features container
-      [theme.breakpoints.down('xs')]: {
-        
-        height: '40%',
+      [theme.breakpoints.down('md')]: { 
+        paddingBottom: '15px'
+      },
+      
+      [theme.breakpoints.down('xs')]: { 
         paddingBottom: '10px'
       },
 
@@ -38,6 +40,16 @@ const useStyles = makeStyles((theme) => ({
         width: '35%',
         height: '25rem',
         borderRadius: '10%',
+        [theme.breakpoints.down('md')]: {
+            width: '40%',
+            height: '20rem',
+            
+          },
+          [theme.breakpoints.down('sm')]: {
+            width: '43%',
+            height: '15rem',
+            
+          },
         [theme.breakpoints.down('xs')]: {
             width: '45%',
             height: '10rem',
@@ -52,6 +64,9 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
         marginTop: '10px',
         marginBottom: '5px',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '22px'
+          },
         [theme.breakpoints.down('xs')]: {
             fontSize: '18px'
           },
@@ -60,6 +75,9 @@ const useStyles = makeStyles((theme) => ({
         // p's within each feature container
         fontSize: '22px',
         marginTop: '5px',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '18px'
+          },
         [theme.breakpoints.down('xs')]: {
             fontSize: '14px'
         },
