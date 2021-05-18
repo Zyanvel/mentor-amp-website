@@ -21,6 +21,7 @@
   /* filter: blur(8px); */
 }
 .sunset-h1-container {
+  /* Makes the area for the caption */
   position: relative;
   margin: 0 20px;
   min-height: 80px;
@@ -28,9 +29,9 @@
   padding: 25px 25px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  /* Gives blurry transparent effect of caption container */
   background: transparent;
   backdrop-filter: blur(15px);
-  font-size: 20px;
   display: block;
   box-sizing: border-box;
   border-radius: 15px;
@@ -47,4 +48,16 @@
 .mentoramp-span {
   font-weight: bold;
   color: black;
+}
+  /* adaptiveness for phone screens */
+@media only screen and (max-width: 600px) {
+  .hero-h1 {
+    font-size: 26px;
+    
+  }
+  .sunset-h1-container {
+    bottom: 50px;
+      /* Moves position down relative to itself */
+
+  }
 }
