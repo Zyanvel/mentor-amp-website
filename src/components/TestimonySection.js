@@ -12,10 +12,15 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     divContainer: {
-      marginTop: theme.spacing(8),
+        marginTop: theme.spacing(8),
+        padding: theme.spacing(4),
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
+        alignItems: 'center',
+
+        
+    
+    
     },
   }));
 
@@ -27,7 +32,7 @@ function TestimonySection() {
         container 
         direction="column" 
         alignItem="center" 
-        justify="center" 
+        justify="center"
         >
             <Typography variant="h3" style= {{color:"#317070"}}>
                     <Box fontWeight="fontWeightBold">
