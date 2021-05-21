@@ -6,7 +6,17 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        mobile: 600,
+        
+      },
+    },
+  }) 
 
 const useStyles = makeStyles((theme) => ({
     
@@ -25,13 +35,16 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '20px',
       fontSize: '25px',
       padding: '0px 15px',
+      
       // sets direction of elements within each of the features container
       [theme.breakpoints.down('md')]: { 
         paddingBottom: '15px'
       },
       
       [theme.breakpoints.down('xs')]: { 
-        paddingBottom: '10px'
+        paddingBottom: '10px',
+        flexDirection: 'column',
+        alignItems: 'center',
       },
 
     },
@@ -51,10 +64,10 @@ const useStyles = makeStyles((theme) => ({
             
           },
         [theme.breakpoints.down('xs')]: {
-            width: '45%',
-            height: '10rem',
-            position: 'relative',
-            top: '45px'
+            width: '70%',
+            height: '15rem',
+           
+            
           },
     },
     heading: {
@@ -67,9 +80,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             fontSize: '22px'
           },
-        [theme.breakpoints.down('xs')]: {
-            fontSize: '18px'
-          },
+        
     },
     pTypography: {
         // p's within each feature container
@@ -78,9 +89,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             fontSize: '18px'
           },
-        [theme.breakpoints.down('xs')]: {
-            fontSize: '14px'
-        },
+       
     }
 
   }));
@@ -138,48 +147,3 @@ function Features() {
 
 export default Features;
 
-
-{/* <Grid className={classes.featuresWrapper}>
-            <Grid className={classes.featuresFirstContainer}>
-            <img src={img1} alt="" className="image-one"/>
-                <Grid className={classes.firstContainerText}>
-                    <Typography className={classes.heading}>
-                        Proven Methodology
-                    </Typography>
-                    <Typography>
-                        MentorAmp's tracking and follow-up technologies encourage
-                positive, goals-focused interactions that leave your people
-                feeling inspired and suported.
-                    </Typography>
-                    <Typography className={classes.heading}>
-                        Foster Friendship
-                    </Typography>
-                    <Typography>
-                    MentorAmp's structure lends to a strong, long-lasting bond
-                    between mentee and mentor.
-                    </Typography>
-                </Grid>
-            </Grid>
-            <Grid className={classes.featuresSecondContainer}>
-                <img src={img2} alt="" className="image-two"/>
-                <Grid className={classes.secondContainerText}>
-                    <Typography className={classes.heading}>
-                        Proven Methodology
-                    </Typography>
-                    <Typography>
-                    MentorAmp's matching algorithm makes onboarding your 
-                entire circle a breeze. Our surveys provide you a simple view
-                of how each person in your circles is feeling and doing.
-                    </Typography>
-                    <Typography className={classes.heading}>
-                    Flexible Pricing
-                    </Typography>
-                    <Typography>
-                    MentorAmp is for everyone, and our pricing  reflects that.
-                Connect with us to explore your options.
-                    </Typography>
-                </Grid>
-            </Grid>
-        </Grid> */}
-
-  
