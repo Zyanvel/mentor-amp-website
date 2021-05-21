@@ -64,6 +64,7 @@
   .carousel-image {
    margin: 0% !important;
    border: 0% !important;
+   height: 200px;
   }
   
   .slider-caption-container {
