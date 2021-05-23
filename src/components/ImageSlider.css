@@ -51,7 +51,7 @@
 
 @media only screen and (max-width: 600px) {
   .caption-text {
-    font-size: 15px;
+    font-size: 13.5px;
     
   }
   .carousel-caption {
@@ -68,13 +68,14 @@
   }
   
   .slider-caption-container {
-    overflow: scroll;
+    overflow: visible;
     display: flex;
     width: 100%;
     flex-direction: column;
     margin-bottom: 150px;
-    height: 250px;
-    border-radius: 0%
+    height: auto;
+    border-radius: 0%;
+    font-size: 10px;
     ;
   
     
@@ -82,6 +83,9 @@
 
   .caption-text > p {
     margin: 100px;
+  }
+  .carousel-indicators li {
+    visibility: hidden;
   }
 
 }
