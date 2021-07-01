@@ -49,6 +49,25 @@
   font-weight: bold;
   color: black;
 }
+
+@media only screen and (max-width: 1250px) {
+  
+  .sunset-h1-container {
+    bottom: 35px;
+      /* Moves position down relative to itself */
+
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .hero-h1 {
+    font-size: 32px;
+  }
+  .sunset-h1-container {
+    bottom: 25px;
+      /* Moves position down relative to itself */
+
+  }
+}
   /* adaptiveness for phone screens */
 @media only screen and (max-width: 600px) {
   .hero-h1 {
@@ -56,7 +75,7 @@
     
   }
   .sunset-h1-container {
-    bottom: 45px;
+    bottom: 5px;
       /* Moves position down relative to itself */
 
   }

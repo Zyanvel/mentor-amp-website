@@ -6,17 +6,20 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
-import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from 'react-bootstrap';
 
 const theme = createMuiTheme({
-    breakpoints: {
-      values: {
-        xs: 0,
-        mobile: 600,
-        
-      },
-    },
-  }) 
+  breakpoints: {
+    values: {
+    xs: 700,
+    sm: 700,
+    md: 960,
+    lg: 1200,
+    xl: 1920,
+}
+  }
+})
 
 const useStyles = makeStyles((theme) => ({
     
@@ -41,10 +44,11 @@ const useStyles = makeStyles((theme) => ({
         paddingBottom: '15px'
       },
       
-      [theme.breakpoints.down('xs')]: { 
+      [theme.breakpoints.only('xs')]: { 
         paddingBottom: '10px',
         flexDirection: 'column',
         alignItems: 'center',
+        width: '90%'
       },
 
     },
@@ -53,19 +57,19 @@ const useStyles = makeStyles((theme) => ({
         width: '35%',
         height: '25rem',
         borderRadius: '10%',
-        [theme.breakpoints.down('md')]: {
+        [theme.breakpoints.only('md')]: {
             width: '40%',
             height: '20rem',
             
           },
-          [theme.breakpoints.down('sm')]: {
+          [theme.breakpoints.only('sm')]: {
             width: '43%',
             height: '15rem',
             
           },
-        [theme.breakpoints.down('xs')]: {
-            width: '70%',
-            height: '15rem',
+        [theme.breakpoints.only('xs')]: {
+            width: '80%',
+            height: '13rem',
            
             
           },
@@ -95,11 +99,11 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 function Features() {
-    const classes = useStyles();
+    const classes = useStyles(theme);
 
     return (
- 
-    <Grid className={classes.featuresWrapper}>
+    <ThemeProvider theme={theme}>
+     <Grid className={classes.featuresWrapper}>
             <Grid className={classes.featuresContainer}>
                 <img src={img1} alt="" className={classes.image}/>
                 <Grid>
@@ -141,6 +145,8 @@ function Features() {
                 <img src={img2} alt="" className={classes.image}/>
             </Grid>
         </Grid>
+      </ThemeProvider>
+
   
     )
 }

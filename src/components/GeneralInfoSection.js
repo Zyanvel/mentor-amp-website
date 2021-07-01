@@ -6,19 +6,7 @@ import "./GeneralInfoSection.css";
 function GeneralInfoSection() {
   return (
     <div id="container-container">
-      <div className="first-part">
-        <p className="first-part-p">
-          Do you really know how well each person in your circle is doing?
-        </p>
-        <p className="first-part-p">
-          Would you like to see your people rise to new heights?
-        </p>
-        <p className="first-part-p">
-          Here are some stories that illustrate how MentorAmp can bring your
-          circle to new levels of happiness, connection and success...
-        </p>
-      </div>
-
+      
       <div id="container">
         <h2 className="headers blue-text">Who we serve</h2>
         <p className="p1">

@@ -8,7 +8,19 @@ import Features from "./components/Features";
 import TestimonySection from "./components/TestimonySection";
 import Form from "./components/Form";
 import ImageSlider from "./components/ImageSlider";
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
+// const theme = createMuiTheme({
+//   breakpoints: {
+//     values: {
+//     xs: 0,
+//     sm: 700,
+//     md: 960,
+//     lg: 1200,
+//     xl: 1920,
+// }
+//   }
+// })
 
 
 
@@ -18,8 +30,8 @@ function App() {
     <Router>
       <div className="app-container">
       <NavBar />
-      <SunsetHeroSection />
-      <GeneralInfoSection />
+      <SunsetHeroSection /> 
+      <GeneralInfoSection  />
       <ImageSlider  />
       <Features />
       <TestimonySection />
