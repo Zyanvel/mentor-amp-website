@@ -11,7 +11,7 @@ function SunsetHeroSection() {
         // blurry caption container
         >
           <h1 className="hero-h1">
-            <span className="mentoramp-span">MentorApm</span> is a group
+            <span className="mentoramp-span">MentorAmp</span> is a group
             coaching and peer mentoring system to realize life and career goals.
           </h1>
         </div>
